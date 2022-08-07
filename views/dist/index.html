@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyTechMarket</title>
+<style> *{
+     margin: 0%;
+     padding: 0%;
+ }
+ html{
+     scroll-behavior: smooth;
+ }
+ #logo{
+   margin: 2px 4px;
+}
+#logo img{
+    border-radius: 100%;
+height: 80px;
+}
+:root{
+    --navbar-height:60px;
+}
+#navbar::before{
+    content: '';
+    background-color: rgb(172, 79, 79);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.2;
+}
+#navbar{
+    top:0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: rgb(22, 21, 21);
+    display: block;
+    font-weight: bold;
+    padding: 1px 22px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#Home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#Home::before{
+    content: '';
+    background:url('../back1.jpg') no-repeat center center/cover ;
+    height: 274px;
+    width: 100%;
+    z-index: -1;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.69;
+
+}
+/* #Home h1{
+
+    font-family: 'Baloo Paaji 2', cursive;
+} */
+#Home p{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color:  #deeff1;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;}
+    .btn a{
+        text-decoration: none;
+    }
+/* products */
+#products-container::before{
+    content: "";
+    position: absolute;
+    background: url('../back2.jpg') no-repeat center center/cover ;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    box-sizing: border-box;
+}
+#products-container{
+    margin: 4px 0px;
+   
+}
+#products{
+    margin: 23px;
+    display: flex;
+    /* flex-direction: ; */
+}
+#products h2{
+    margin: 67px 0px;
+}
+#products .box{
+border: 2px solid red;
+margin: 20px 9px ;
+padding: 13px 34px;
+width: 30%;
+border-radius: 24px;
+height: 40%;
+box-shadow: 4px 6px 8px rgb(24, 24, 28);
+}
+#products .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+
+}
+ .box ul li{
+    font-size: 1rem;
+}
+.h-primary{
+    font-size: 2rem;
+    font-family: 'Baloo Paaji 2', cursive;
+    text-shadow: 3px 3px 6px white;
+}
+.h-secondary{
+    margin: 0%;
+    font-size: 1.6rem;
+    font-family: 'Roboto Slab', serif;
+}
+.center{
+    text-align: center;
+}
+/* brands section */
+#brands::before{
+    content: "";
+ position: absolute;
+ background: url('../back4.jpg') no-repeat center center/cover ;
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ /* opacity: 0.6; */
+}
+#brands{
+   position: relative;
+   margin-top: -14px;
+}
+#brand-logo{
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    justify-content: center; 
+}
+#brand-logo img{
+    height: 45px;
+    margin: 9px 20px;
+    border-radius: 4px;  
+}
+/* contacts */
+#contact::before{
+    content: '';
+    position: absolute;
+    background: url('/img/back3.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#contact{
+    position: relative;
+    margin-top: 4px;
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact-box  input,#contact-box textarea{
+    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Baloo Paaji 2', cursive;
+    width: 100%;
+    padding: 4px;
+    font-size: 1.1rem;
+    border-radius: 23px;
+}
+#contact-box label{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.3rem;   
+}
+form .btn{
+  
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 0px;
+    font-family: 'Roboto Slab', serif;
+}
+footer{
+    background: rgb(95, 94, 94);
+    color: white;
+    padding: 9px 20px;
+}
+.center{
+    text-align: center;
+}
+</style>
+<link rel="stylesheet" media="screen and (max-width: 1465px)" href="static/phone.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/></head>
+<html> 
+  <body>
+    <div id="navbar">
+      <div id="logo"><img src="../static2/logo.png" alt="not found"/></div>
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#products-container">Our Products</a></li>
+        <li><a href="#brands">Brands</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <section id="Home">
+      <h1 class="h-primary center">Welcome to MyTechMarket</h1>
+      <p>“TechMarket was born in Puget Sound and we are grateful to be part of this thriving community.”</p></p>
+      <p>
+         We partner with many civic leaders, community organizations, and other companies to address urgent needs, and we are committed to doing our part to improve our region for future generations.</p></p><button class="btn"> <a href="https://www.flipkart.com/search?q=smart+watches&sid=ajy%2Cbuh&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&as-pos=1&as-type=HISTORY&suggestionId=smart+watches%7CSmart+Watches&requestId=c1ebe7fb-b860-4aea-9473-669023d32339" target="_blank">Buy Now</a></button>       
+    </section>
+    <section id="products-container">
+      <h2 class="h-primary center">Our Product</h2>
+      <div id="products">
+        <div class="box"><img src="img/watch1.jpg" alt="">
+          <h2 class="h-secondary center">boAt Storm</h2>
+          <p>
+            <ul><li>Metal built-up with classy Design</li>
+<li>Bluetooth Version 4.2 </li>
+<li>210mAh Battery Capacity</li>
+<li> 8-10 Days Playtime </li>
+<li>5atm Water Resistance Power</li>
+<li>6-Axis Motion Sensor </li>
+<li>Heart Rate Sensor</li>
+<li>SPO2 Sensor</li>
+<li>Various Sports Mode</li>
+            </ul>
+          </p>
+        </div>
+        <div class="box"><img src="img/watch2.webp" alt="">
+          <h2 class="h-secondary center">boAt Xtend</h2>
+          <p>
+            <ul><li>Display: 1.69″ inch</li>
+<li> 300 mAh battery with 7 days of normal usage</li>
+<li> g-sensor, heart rate monitor, blood oxygen monitor</li>
+<li> Bluetooth 5.0</li>
+<li>Color: Pitch Blakc, Deep Blue, Sandy Cream, Olive Green</li>
+<li>Water Resistant: 5 ATM up to 30 minutes</li>
+<li>Compatibility: Android and iOS</li>
+            </ul>
+          </p>
+        </div>
+        <div class="box"><img src="img/watch3.webp" alt="">
+          <h2 class="h-secondary center">Noise fit</h2>
+          <p>
+            <ul><li>Display: 1.28 inch</li>
+<li>Resolution: 240 x240 pixels</li>
+<li>Display Type: LCD Round Touch Screen Display</li>
+<li>Bluetooth 5.0</li>
+<li>Compatible with both Android 5.0+ and iOS 8.0+</li>
+<li>4023 mAh battery with 10 days normal use</li>
+<li> 100+ Cloud based Watch Faces</li>
+<li>Water Resistance Limit: Can withstand submersion of up to 1.5 m</li>
+<li>Dimensions: 45 mm x 46 mm x 12 mm</li>
+            </ul>
+          </p>
+        </div>
+        <div class="box"><img src="img/watch4.webp" alt="">
+          <h2 class="h-secondary center">Fire-Boltt</h2>
+          <p>
+            <ul><li>Ultra Thin 9.5mm and IP68 Water Resistance</li>
+<li>27 Sports Mode | Large 8 Days Battery Power</li>
+<li>Smart Health Tracking with SpO2, Heart Rate, Sleep Monitoring</li>
+<li>100 + Cloud Faces to match each style | All in One Social Update Notifications</li>
+<li>Fitness & Outdoor, Health & Medical</li>
+<li>Battery Runtime: Upto 8 days</li>
+<li>1.6" Large Color LCD Full Touch Screen with 2.5D Curved Glass and 240*288 pixel Resolution</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="brands">
+      <h2 class="h-primary center">Our Brands</h2>
+      <div id="brand-logo"> 
+        <div><img src="../static2/apple logo.jpg" alt=""/></div>
+        <div><img src="../static2/boAt_logo.jpg" alt=""/></div>
+        <div><img src="../static2/fire- boltt.png" alt=""/></div>
+        <div><img src="../static2/MI logo.jpg" alt=""/></div>
+      </div>
+    </section>
+    <section id="contact">
+      <h1 class="h-primary center">Contact Us</h1>
+      <div id="contact-box"><form action="/contact",method="post"  id="contact">
+        <div class="form-group"><label (for="name")> Name:
+<input type="text" name="name" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group"><label for="email" >Email:
+          <input type="email" name="email" id="email" placeholder="Enter your email"/>
+        </div>
+        <div class="form-group"><label for="phone">Phone Number: </label>
+<input type="phone" name="phone" id="phone" placeholder="Enter your phone">
+        </div>
+        <div class="form-group"><label for="message">Message: </label>
+<textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div><button class="btn" type="submit">Submit
+      </div>
+    </section>
+    <footer>
+      <div class="center">
+        <copyright>&copy; www.MyTechMarket.com. All rights reserved!</copyright>
+      </div>
+    </footer>
+  </body>
+</html>

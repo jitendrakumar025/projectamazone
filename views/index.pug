@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTechMarket</title>
+    //-  <link rel="stylesheet" href="css/style.css"> 
+    style
+
+        include ../static/style.css 
+    //- <link rel="stylesheet" media="screen and (max-width: 1465px)" href="css/phone.css">
+    link(rel='stylesheet',media="screen and (max-width: 1465px)", href='static/phone.css')
+    //- <link rel="preconnect" href="https://fonts.googleapis.com">
+    link(rel="preconnect", href="https://fonts.googleapis.com")
+</head>
+html 
+ body
+    div#navbar
+        div#logo
+            img(src="../static2/logo.png" alt="not found")
+        ul
+            li #[a(href="#Home") Home]
+            li #[a(href="#products-container") Our Products]
+            li #[a(href="#brands") Brands]
+            li #[a(href="#contact") Contact Us]
+       
+    
+    section#Home
+        h1.h-primary.center Welcome to MyTechMarket
+        p “TechMarket was born in Puget Sound and we are grateful to be part of this thriving community.”</p>
+        p  We partner with many civic leaders, community organizations, and other companies to address urgent needs, and
+            |  we are committed to doing our part to improve our region for future generations.</p>
+        <button class="btn"> <a href="https://www.flipkart.com/search?q=smart+watches&sid=ajy%2Cbuh&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&as-pos=1&as-type=HISTORY&suggestionId=smart+watches%7CSmart+Watches&requestId=c1ebe7fb-b860-4aea-9473-669023d32339" target="_blank">Buy Now</a></button>       
+    
+    section#products-container
+        h2.h-primary.center Our Product
+        div#products
+            div.box
+                <img src="img/watch1.jpg" alt="">
+                h2.h-secondary.center boAt Storm
+                p
+                    ul
+                        <li>Metal built-up with classy Design</li>
+                        <li>Bluetooth Version 4.2 </li>
+                        <li>210mAh Battery Capacity</li>
+                        <li> 8-10 Days Playtime </li>
+                        <li>5atm Water Resistance Power</li>
+                        <li>6-Axis Motion Sensor </li>
+                        <li>Heart Rate Sensor</li>
+                        <li>SPO2 Sensor</li>
+                        <li>Various Sports Mode</li>
+                
+            div.box
+                <img src="img/watch2.webp" alt="">
+                h2.h-secondary.center boAt Xtend
+                p
+                    ul
+                        <li>Display: 1.69″ inch</li>
+                        <li> 300 mAh battery with 7 days of normal usage</li>
+                        <li> g-sensor, heart rate monitor, blood oxygen monitor</li>
+                        <li> Bluetooth 5.0</li>
+                        <li>Color: Pitch Blakc, Deep Blue, Sandy Cream, Olive Green</li>
+                        <li>Water Resistant: 5 ATM up to 30 minutes</li>
+                        <li>Compatibility: Android and iOS</li>
+                
+            div.box
+                <img src="img/watch3.webp" alt="">
+                h2.h-secondary.center Noise fit
+                p
+                    ul
+                        <li>Display: 1.28 inch</li>
+                        <li>Resolution: 240 x240 pixels</li>
+                        <li>Display Type: LCD Round Touch Screen Display</li>
+                        <li>Bluetooth 5.0</li>
+                        <li>Compatible with both Android 5.0+ and iOS 8.0+</li>
+                        <li>4023 mAh battery with 10 days normal use</li>
+                        <li> 100+ Cloud based Watch Faces</li>
+                        <li>Water Resistance Limit: Can withstand submersion of up to 1.5 m</li>
+                        <li>Dimensions: 45 mm x 46 mm x 12 mm</li>
+                  
+            div.box
+                <img src="img/watch4.webp" alt="">
+                h2.h-secondary.center Fire-Boltt
+                p
+                    ul
+                        <li>Ultra Thin 9.5mm and IP68 Water Resistance</li>
+                        <li>27 Sports Mode | Large 8 Days Battery Power</li>
+                        <li>Smart Health Tracking with SpO2, Heart Rate, Sleep Monitoring</li>
+                        <li>100 + Cloud Faces to match each style | All in One Social Update Notifications</li>
+                        <li>Fitness & Outdoor, Health & Medical</li>
+                        <li>Battery Runtime: Upto 8 days</li>
+                        <li>1.6" Large Color LCD Full Touch Screen with 2.5D Curved Glass and 240*288 pixel Resolution</li>
+         
+    section#brands
+        h2.h-primary.center Our Brands
+        div#brand-logo 
+            div
+                img(src="../static2/apple logo.jpg" alt="")
+            div
+                img(src="../static2/boAt_logo.jpg" alt="")    
+            div
+                img(src="../static2/fire- boltt.png" alt="")    
+            div
+                img(src="../static2/MI logo.jpg" alt="")    
+       
+    
+    section#contact
+        h1.h-primary.center Contact Us
+        div#contact-box
+            <form action="/contact",method="post"  id="contact">
+                div.form-group
+                    <label (for="name")> Name:
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                
+                div.form-group
+                    <label for="email" >Email:
+                    input(
+                         type="email"
+                         name="email"
+                         id="email" 
+                         placeholder="Enter your email"
+                        )
+                
+                div.form-group
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="phone" id="phone" placeholder="Enter your phone">
+                
+                div.form-group
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                
+                <button class="btn" type="submit">Submit
+         
+    footer
+        div.center
+            copyright &copy; www.MyTechMarket.com. All rights reserved!
+   
+

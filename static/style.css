@@ -1,0 +1,222 @@
+ *{
+     margin: 0%;
+     padding: 0%;
+ }
+ html{
+     scroll-behavior: smooth;
+ }
+ #logo{
+   margin: 2px 4px;
+}
+#logo img{
+    border-radius: 100%;
+height: 80px;
+}
+:root{
+    --navbar-height:60px;
+}
+#navbar::before{
+    content: '';
+    background-color: rgb(172, 79, 79);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.2;
+}
+#navbar{
+    top:0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: rgb(22, 21, 21);
+    display: block;
+    font-weight: bold;
+    padding: 1px 22px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#Home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#Home::before{
+    content: '';
+    background:url('../back1.jpg') no-repeat center center/cover ;
+    height: 274px;
+    width: 100%;
+    z-index: -1;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.69;
+
+}
+/* #Home h1{
+
+    font-family: 'Baloo Paaji 2', cursive;
+} */
+#Home p{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color:  #deeff1;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;}
+    .btn a{
+        text-decoration: none;
+    }
+/* products */
+#products-container::before{
+    content: "";
+    position: absolute;
+    background: url('../back2.jpg') no-repeat center center/cover ;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    box-sizing: border-box;
+}
+#products-container{
+    margin: 4px 0px;
+   
+}
+#products{
+    margin: 23px;
+    display: flex;
+    /* flex-direction: ; */
+}
+#products h2{
+    margin: 67px 0px;
+}
+#products .box{
+border: 2px solid red;
+margin: 20px 9px ;
+padding: 13px 34px;
+width: 30%;
+border-radius: 24px;
+height: 40%;
+box-shadow: 4px 6px 8px rgb(24, 24, 28);
+}
+#products .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+
+}
+ .box ul li{
+    font-size: 1rem;
+}
+.h-primary{
+    font-size: 2rem;
+    font-family: 'Baloo Paaji 2', cursive;
+    text-shadow: 3px 3px 6px white;
+}
+.h-secondary{
+    margin: 0%;
+    font-size: 1.6rem;
+    font-family: 'Roboto Slab', serif;
+}
+.center{
+    text-align: center;
+}
+/* brands section */
+#brands::before{
+    content: "";
+ position: absolute;
+ background: url('../back4.jpg') no-repeat center center/cover ;
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ /* opacity: 0.6; */
+}
+#brands{
+   position: relative;
+   margin-top: -14px;
+}
+#brand-logo{
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    justify-content: center; 
+}
+#brand-logo img{
+    height: 45px;
+    margin: 9px 20px;
+    border-radius: 4px;  
+}
+/* contacts */
+#contact::before{
+    content: '';
+    position: absolute;
+    background: url('/img/back3.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#contact{
+    position: relative;
+    margin-top: 4px;
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact-box  input,#contact-box textarea{
+    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Baloo Paaji 2', cursive;
+    width: 100%;
+    padding: 4px;
+    font-size: 1.1rem;
+    border-radius: 23px;
+}
+#contact-box label{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.3rem;   
+}
+form .btn{
+  
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 0px;
+    font-family: 'Roboto Slab', serif;
+}
+footer{
+    background: rgb(95, 94, 94);
+    color: white;
+    padding: 9px 20px;
+}
+.center{
+    text-align: center;
+}

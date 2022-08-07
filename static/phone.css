@@ -1,0 +1,53 @@
+
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    font-size: 0.8rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+}
+#Home{
+    height: 178px;
+    padding: 0px 20px;
+}
+.btn{
+    font-size: 1rem;
+}
+#Home::before{
+    height: 292px;
+}
+.h-primary {
+    font-size: 23px;
+}
+#Home p{
+    font-size: 0.8rem;
+}
+#products-container::before{
+    /* height: 3343px; */
+    height: 100%;
+}
+#products h2{
+    margin: 23px 0px;
+}
+.h-secondary{
+    font-size: 1rem;
+}
+#products{
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+#products .box img{
+    height: 68px;
+    margin: 4px;
+
+}
+#brand-logo{
+    flex-wrap: wrap;
+}
+#contact-box form{
+    width: 80%;
+}
+#contact-box label {
+    font-size: 1rem;
+}
